@@ -2,27 +2,22 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import { Celda } from "./Celda";
 
 //create your first component
+
 const Home = () => {
 	return (
-		<div className="text-center">
-            
-
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+		<Celda className="d-flex text-white justify-content-center align-items-center vh-100">
+			<Celda text="H" />
+			<Celda text="1" />
+			<Celda text="2" />
+			<Celda text="3" />
+			<Celda text="4" />
+			<Celda text="5" />
+			<Celda text="6" />
+		</Celda>
+	)
 };
 
 export default Home;
